@@ -49,6 +49,9 @@ function thirdBlock() {
     }
 }
 function correct() {
+    window.addEventListener("click", final)
+}
+function final() {
     if (document.getElementById("img1").src.substring(36,39) === document.getElementById("img2").src.substring(36,39) && document.getElementById("img1").src.substring(36,39) === document.getElementById("img3").src.substring(36,39)) {
         document.getElementById("img1").style.borderColor = "red"
         document.getElementById("img2").style.borderColor = "red"
